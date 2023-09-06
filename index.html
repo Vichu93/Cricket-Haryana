@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haryana Cricket Association</title>
+  <link rel="icon" type="image/x-icon" href="images/haryana.png" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="header.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https:/cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="
+https://cdn.jsdelivr.net/npm/bootswatch@5.3.1/dist/cerulean/bootstrap.min.css
+" rel="stylesheet">
+  <!-- BOX ICON -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700&family=Rajdhani:wght@500&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+  <!-- Style for tabs -->
+  <style>
+    .tab {
+      overflow: hidden;
+    }
+
+    .tab button {
+      background-color: #f2f2f2;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
+
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBSR START -->
+  <nav class="navibar">
+    <div class="logo">
+      <a href="#"><img src="images/haryananew.png" alt="mlc"></a>
+    </div>
+    <div class="menu flex" style="justify-content: space-between;">
+      <ul>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">MATCHES</a></li>
+        <li><a href="#">TICKETS</a></li>
+        <li><a href="#">TEAMS</a></li>
+        <li><a href="#">VIDEOS</a></li>
+        <li><a href="#">PHOTOS</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">WATCH</a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><i class='bx bxl-instagram-alt bx-sm' style='color:grey'></i></a></li>
+        <li><a href="#"><i class='bx bxl-facebook bx-sm' style='color:grey'></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter bx-sm' style='color:grey'></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+  <!-- BANNER START -->
+  <div>
+    <div class="banner-matches">
+      <div
+        style="display: flex; flex-direction: column; justify-content: center; text-align: center; align-items: center; margin-top: 15px; margin-bottom: 25px;">
+        <h2 style="color: white;">PATAUDI TROPHY</h2>
+        <span style="font-weight: 200;">CH BANSI LAL CRICKET STADIUM LAHLI,ROHTAK</span>
+        <span>06<sup>TH</sup> SEP 2023</span>
+        <span style="width: 125px; padding: 5px 15px; background: red; color: white; font-weight: 600;">LIVE</span>
+        <div style="display: flex; gap: 30px; margin-top: 15px;">
+          <div style="display: flex; gap: 10px;">
+            <div style="display: flex; flex-direction: column; text-align: end;">
+              <strong>KARNAL</strong>
+              <strong>191/9</strong>
+              <span>(50.0 Ov)</span>
+            </div>
+            <img src="./images/haryana.png" height="84px">
+          </div>
+
+          <div style="display: flex; gap: 10px;">
+            <img src="./images/haryana.png" height="84px">
+            <div style="display: flex; flex-direction: column; text-align: start;">
+              <strong>FARIDABAD</strong>
+              <strong>181/5</strong>
+              <span>(42.4 Ov)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NAV -->
+    <div class="teamnav">
+      <div class="teamnav__container">
+        <ul>
+          <li><button onclick="openTab('Summary')">Summary</button></li>
+          <li><button onclick="openTab('Stats')">Stats</button></li>
+          <li><button onclick="openTab('Scorecard')">Scorecard</button></li>
+          <li><button onclick="openTab('PlayingXI')">Playing XI</button></li>
+        </ul>
+      </div>
+    </div>
+    <!-- NAV -->
+  </div>
+  <!-- BANNER END -->
+
+  <!-- Tab buttons -->
+  <!-- <div class="tab">
+    <button onclick="openTab('Summary')">Summary</button>
+    <button onclick="openTab('Stats')">Stats</button>
+    <button onclick="openTab('Scorecard')">Scorecard</button>
+    <button onclick="openTab('PlayingXI')">Playing XI</button>
+  </div> -->
+
+
+
+  <!-- Tab content -->
+  <div id="Summary" class="tabcontent">
+    <div>
+      <h2>Match Summary</h2>
+      <div class="row" style=" border-bottom: 1px solid #ddd;">
+        <div class="col-lg-7">
+          <div style="display: flex; justify-content: space-between; margin-bottom: -10px; margin-bottom: 20px;">
+            <strong style="margin-top: 20px;">FARIDABAD</strong>
+            <div style="display: flex; flex-direction: column; float: right;">
+              <strong style="float: right; margin-right: 0px;">181/5</strong>
+              <span>CRR 4.24 (42.4 OV)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5" style="border-left: 1px solid #ddd; margin-bottom: 20px;"></div>
+      </div>
+
+      <div class="row" style="border-bottom: 1px solid #ddd;">
+        <div class="col-lg-7" style="margin: 20px 0;">
+          <strong>FARIDABAD NEED 60 RUN(S) TO WIN</strong>
+        </div>
+        <div class="col-lg-5" style="border-left: 1px solid #ddd; margin: 20px 0;">
+          <strong>KARNAL WERE 135/1 IN 33.0 OVERS</strong>
+        </div>
+      </div>
+
+      <div class="row" style="border-bottom: 1px solid #ddd;">
+        <div class="col-lg-7" style=" margin: 20px 0;">
+          <!-- 1st Innings - Batsmen Table -->
+          <table>
+            <tr>
+              <th>BATTER</th>
+              <th>R</th>
+              <th>B</th>
+              <th>0's</th>
+              <th>4's</th>
+              <th>6's</th>
+              <th>SR</th>
+            </tr>
+            <tr>
+              <td>DHEERU SINGH</td>
+              <td>38</td>
+              <td>56</td>
+              <td>38</td>
+              <td>2</td>
+              <td>2</td>
+              <td>67.86</td>
+            </tr>
+            <tr>
+              <td>PRASHANT VASHIST</td>
+              <td>31</td>
+              <td>36</td>
+              <td>19</td>
+              <td>1</td>
+              <td>2</td>
+              <td>86.11</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-lg-5" style="border-left: 1px solid #ddd;  margin: 20px 0;">
+          <!-- 1st Innings - Bowlers Table -->
+          <table>
+            <tr>
+              <th>LAST 5 OVERS</th>
+              <th>R</th>
+              <th>B</th>
+              <th>4's</th>
+              <th>6's</th>
+              <th>SR</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>13</td>
+              <td>32</td>
+              <td>1</td>
+              <td>0</td>
+              <td>40.63</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="row" style="border-bottom: 1px solid #ddd;">
+        <div class="col-lg-7" style=" margin: 20px 0;">
+          <!-- 2nd Innings - Batsmen Table -->
+          <table>
+            <tr>
+              <th>BOWLER</th>
+              <th>O</th>
+              <th>R</th>
+              <th>W</th>
+              <th>4's</th>
+              <th>6's</th>
+              <th>SR</th>
+            </tr>
+            <tr>
+              <td>HARSHIT SAINI</td>
+              <td>10.0</td>
+              <td>19</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1.90</td>
+            </tr>
+            <tr>
+              <td>SHIVAM CHAUHAN</td>
+              <td>7.0</td>
+              <td>37</td>
+              <td>1</td>
+              <td>3</td>
+              <td>1</td>
+              <td>5.29</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="col-lg-5" style="border-left: 1px solid #ddd;  margin: 20px 0;">
+          <!-- 2nd Innings - Bowlers Table -->
+          <table>
+            <tr>
+              <th>THIS SPELL (CURR BWLR)</th>
+              <th>O</th>
+              <th>R</th>
+              <th>W</th>
+              <th>MD</th>
+              <th>ECO</th>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div style="display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; color: white; background: blue; padding: 10px 5px;">
+            <strong>END OF OVER 1</strong>
+            <strong>FARIDABAD</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; background: skyblue; padding: 10px 5px;">
+            <span>9 RUNS</span>
+            <div style="display: flex; justify-content: space-between; gap: 60px;">
+              <span>FARIDABAD NEED 183 RUNS TO WIN</span>
+              <span>RR 9.00</span>
+            </div>
+          </div>
+          <div class="row" style="padding: 10px 5px 0px 5px; border-bottom: 1px solid #ddd;">
+            <div class="col-sm-2" style="display: flex; flex-direction: column;">
+              <span style="width: fit-content; padding: 5px 15px; background: gray; color: white; border-radius: 5px;">0</span>
+              <span style="padding: 5px 8px 0px 8px;">0.6</span>
+            </div>
+            <div class="col-sm-10">
+              <span>HARSHIT KUMAR TO DHRUV PARASHAR, 0 RUNS</span>
+            </div>
+          </div>
+          <div class="row" style="padding: 10px 5px 0px 5px; border-bottom: 1px solid #ddd;">
+            <div class="col-sm-2" style="display: flex; flex-direction: column;">
+              <span style="width: fit-content; padding: 5px 15px; background: gray; color: white; border-radius: 5px;">0</span>
+              <span style="padding: 5px 8px 0px 8px;">0.5</span>
+            </div>
+            <div class="col-sm-10">
+              <span>HARSHIT KUMAR TO DHRUV PARASHAR, 0 RUNS</span>
+            </div>
+          </div>
+          <div class="row" style="padding: 10px 5px 0px 5px; border-bottom: 1px solid #ddd;">
+            <div class="col-sm-2" style="display: flex; flex-direction: column;">
+              <span style="width: fit-content; padding: 5px 15px; background: gray; color: white; border-radius: 5px;">0</span>
+              <span style="padding: 5px 8px 0px 8px;">0.4</span>
+            </div>
+            <div class="col-sm-10">
+              <span>HARSHIT KUMAR TO DHRUV PARASHAR, 0 RUNS</span>
+            </div>
+          </div>
+          <div class="row" style="padding: 10px 5px 0px 5px; border-bottom: 1px solid #ddd;">
+            <div class="col-sm-2" style="display: flex; flex-direction: column;">
+              <span style="width: fit-content; padding: 5px 15px; background: gray; color: white; border-radius: 5px;">2</span>
+              <span style="padding: 5px 8px 0px 8px;">0.3</span>
+            </div>
+            <div class="col-sm-10">
+              <span>HARSHIT KUMAR TO DHRUV PARASHAR, COVERS FOR 2{RUNS)</span>
+            </div>
+          </div>
+          <div class="row" style="padding: 10px 5px 0px 5px; border-bottom: 1px solid #ddd;">
+            <div class="col-sm-2" style="display: flex; flex-direction: column;">
+              <span style="width: fit-content; padding: 5px 15px; background: gray; color: white; border-radius: 5px;">1</span>
+              <span style="padding: 5px 8px 0px 8px;">0.2</span>
+            </div>
+            <div class="col-sm-10">
+              <span>HARSHIT KUMAR TO AAKASH ANTIL, BACKWARD SQUARE LEG FOR 1{RUNS)</span>
+            </div>
+          </div>
+          <div class="row" style="padding: 10px 5px 0px 5px; border-bottom: 1px solid #ddd;">
+            <div class="col-sm-2" style="display: flex; flex-direction: column;">
+              <span style="width: fit-content; padding: 5px 15px; background: gray; color: white; border-radius: 5px;">6</span>
+              <span style="padding: 5px 8px 0px 8px;">0.1</span>
+            </div>
+            <div class="col-sm-10">
+              <span>HARSHIT KUMAR TO AAKASH ANTIL, FINE LEG FOR !!! SIX !!!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <h4>MATCH INFO</h4>
+        <div style="display: flex; flex-direction: column;">
+          <div style="border-bottom: 1px solid #ddd; display: flex; flex-direction: column; margin-bottom: 10px;">
+        <span>TOURNAMENT</span>
+        <strong style="margin-bottom: 10px;">PATAUDI TROPHY</strong>
+      </div>
+      <div style="border-bottom: 1px solid #ddd; display: flex; flex-direction: column; margin-bottom: 10px;">
+        <span>FORMAT</span>
+        <strong style="margin-bottom: 10px;">LIMITED OVERS</strong>
+      </div>
+        <div style="border-bottom: 1px solid #ddd; display: flex; flex-direction: column; margin-bottom: 10px;">
+        <span>SEASON</span>
+        <strong style="margin-bottom: 10px;">2023 - 24</strong>
+      </div>
+        <div style="border-bottom: 1px solid #ddd; display: flex; flex-direction: column; margin-bottom: 10px;">
+        <span>GROUND</span>
+        <strong style="margin-bottom: 10px;">CH BANSI LAL CRICKET STADIUM LAHLIY</strong>
+      </div>
+        <div style="border-bottom: 1px solid #ddd; display: flex; flex-direction: column; margin-bottom: 10px;">
+        <span>MATCH DATE</span>
+        <strong style="margin-bottom: 10px;">06<sup>TH</sup> SEP 2023</strong>
+      </div>
+        <div style="border-bottom: 1px solid #ddd; display: flex; flex-direction: column; margin-bottom: 10px;">
+        <span>TOSS</span>
+        <strong style="margin-bottom: 10px;">FARIDABAD - OPTED TO FIELD</strong>
+      </div>
+        <div style="border-bottom: 1px solid #ddd; display: flex; flex-direction: column; margin-bottom: 10px;">
+        <span>UMPIRE 1</span>
+        <strong style="margin-bottom: 10px;">RAVINDER</strong>
+      </div>
+        <div style="border-bottom: 1px solid #ddd; display: flex; flex-direction: column; margin-bottom: 10px;">
+        <span>UMPIRE 2</span>
+        <strong style="margin-bottom: 10px;">ANKIT DABLA</strong>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="Stats" class="tabcontent">
+    <h2>Match Stats</h2>
+    <p>Here are the statistics of the match.</p>
+  </div>
+
+  <div id="Scorecard" class="tabcontent">
+    <h2>Scorecard</h2>
+    <p>This is the scorecard of the match.</p>
+  </div>
+
+  <div id="PlayingXI" class="tabcontent">
+    <h2>Playing XI</h2>
+    <p>These are the players in the playing XI.</p>
+  </div>
+
+  <script>
+    // JavaScript function to switch between tabs
+    function openTab(tabName) {
+      var i;
+      var tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+
+    // By default, display the Summary tab
+    openTab("Summary");
+  </script>
+</body>
+
+</html>

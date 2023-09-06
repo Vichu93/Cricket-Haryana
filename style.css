@@ -1,0 +1,157 @@
+/* Reset some default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ebecf2 !important;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+}
+
+/* Style for tabs */
+.tab {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* .tab button {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.3s;
+} */
+
+/* .tab button:hover {
+  background-color: #ddd;
+} */
+
+/* Content container */
+.content {
+  padding: 20px;
+}
+
+/* Style for tab content */
+/* .tabcontent {
+  display: none;
+} */
+
+/* Style for the active tab */
+.active {
+  display: block;
+}
+
+/* Style for paragraphs in tab content */
+.tabcontent {
+  margin-top: 30px;
+  margin-left: 240px;
+  margin-right: 240px;
+  padding: 20px;
+  background: #fff;
+}
+
+.match-info {
+  margin-top: 30px;
+  margin-left: 240px;
+  margin-right: 240px;
+  padding: 20px;
+  background: #fff;
+}
+
+.tabcontent p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0px;
+}
+
+th {
+  background: #ddd;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style for the comparison table */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.comparison-table td {
+  border: none;
+  padding: 8px;
+  text-align: center;
+  position: relative;
+}
+
+/* Style for the statistic title */
+.stat-title {
+  font-weight: bold;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* Style for the team names */
+.team-name {
+  width: 20%; /* Smaller cell width for team names */
+  text-align: center;
+}
+
+/* Style for the bar cell */
+.bar-cell {
+  width: 60%; /* Larger cell width for the bar cell */
+  position: relative;
+}
+
+/* Style for the bar container */
+.bar {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+.progress {
+  --mdb-progress-bg: #ea0048 !important;
+  height: 15px !important;
+}
+.bg-ifo {
+  --mdb-bg-opacity: 1 !important;
+  background-color: #1d2a8f !important;
+}
+
+/* Style for the bars */
+.bar-team1,
+.bar-team2 {
+  height: 100%;
+  transition: width 0.5s;
+}
+
+/* Apply background colors for the bars */
+.bar-team1 {
+  background-color: #3498db !important; /* Team 1 color */
+}
+
+.bar-team2 {
+  background-color: #e74c3c !important; /* Team 2 color */
+}
+
